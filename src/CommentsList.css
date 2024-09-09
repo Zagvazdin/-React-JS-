@@ -1,0 +1,28 @@
+/* src/CommentsList.css */
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .comment-text {
+    margin-right: 16px; /* Отступ от кнопки */
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.6s ease, opacity 0.6s ease; /* Плавный переход */
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  button.flip {
+    transform: rotateY(180deg); /* Переворот кнопки */
+    opacity: 0; /* Исчезновение */
+  }
+  
